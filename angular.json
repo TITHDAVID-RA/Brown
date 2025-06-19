@@ -22,6 +22,8 @@
               }
             ],
             "styles": [
+              "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",
@@ -80,11 +82,16 @@
               }
             ],
             "styles": [
+              "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "72ad20b8-8d35-48a9-89c6-6ace468ee367"
   }
 }
