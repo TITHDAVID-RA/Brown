@@ -1,97 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+<header class="w-full px-4 pt-4 bg-white">
+    <!-- Top: Logo Only -->
+    <div class="flex justify-center mb-3">
+        <img src="https://www.browncoffee.com.kh/ximg/Com_Small_Logo.png" alt="Brown Coffee Logo"
+            class="w-[190px] h-[65px] object-contain" />
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 
-<body>
-    <header class="w-full px-4 pt-4 bg-white">
-        <!-- Top: Logo Only -->
-        <div class="flex justify-center mb-3">
-            <img src="https://www.browncoffee.com.kh/ximg/Com_Small_Logo.png" alt="Brown Coffee Logo"
-                class="w-[190px] h-[65px] object-contain" />
+    <div class="w-full max-w-5xl mx-auto px-4 mt-6">
+        <!-- Horizontal Line with Dots -->
+        <div class="relative w-full max-w-[600px] mx-auto h-[1px] bg-[#14203B]">
+            <!-- Left Dot -->
+            <div class="absolute top-1/2 left-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
+            <!-- Right Dot -->
+            <div class="absolute top-1/2 right-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
         </div>
 
+        <!-- Sign In + Search Form -->
+        <div class="relative z-10 flex justify-center items-center gap-2 mt-4">
+            <!-- Sign In -->
+            <span class="text-sm text-[#14203B]">Sign In</span>
 
-        <div class="w-full max-w-5xl mx-auto px-4 mt-6">
-            <!-- Horizontal Line with Dots -->
-            <div class="relative w-full max-w-[600px] mx-auto h-[1px] bg-[#14203B]">
-                <!-- Left Dot -->
-                <div class="absolute top-1/2 left-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
-                <!-- Right Dot -->
-                <div class="absolute top-1/2 right-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
+            <!-- Search Input -->
+            <div class="flex items-center border border-[#14203B] rounded-full px-3 py-1">
+                <input type="text" placeholder="search"
+                    class="text-sm placeholder:text-[#999] text-center outline-none w-40 bg-transparent" />
             </div>
 
-            <!-- Sign In + Search Form -->
-            <div class="relative z-10 flex justify-center items-center gap-2 mt-4">
-                <!-- Sign In -->
-                <span class="text-sm text-[#14203B]">Sign In</span>
+            <!-- Arrow Button -->
+            <button
+                class="w-[28px] h-[28px] border border-[#14203B] rounded-full flex items-center justify-center text-[#14203B] text-sm">
+                &gt;
+            </button>
+        </div>
+    </div>
 
-                <!-- Search Input -->
-                <div class="flex items-center border border-[#14203B] rounded-full px-3 py-1">
-                    <input type="text" placeholder="search"
-                        class="text-sm placeholder:text-[#999] text-center outline-none w-40 bg-transparent" />
+
+    <!-- Navigation -->
+    <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-[#14203B] pt-4">
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-mobile-alt text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>Menu</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-credit-card text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>BROWN Card</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-map-marker-alt text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>Location</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-mug-hot text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>Merchandise</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-blender text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>DIY Coffee</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-bullhorn text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>News / Promotion</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="fas fa-user-plus text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>Join Brown</span>
+        </a>
+        <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
+            <i class="far fa-circle text-sm w-4 h-4 align-middle shrink-0"></i>
+            <span>Our Story</span>
+        </a>
+    </nav>
+
+
+    <!-- Bottom Line with Dots -->
+    <div class="relative w-full max-w-7xl mx-auto mt-3">
+        <div class="relative h-[1px] bg-[#14203B]">
+            <div class="absolute top-1/2 left-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
+            <div class="absolute top-1/2 right-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
+        </div>
+    </div>
+
+    <swiper-container class="w-full h-[300px] mt-4" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide>
+            <div class="max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <!-- Left: Image -->
+                <div>
+                    <img src="https://imagedelivery.net/dfd6F6eY_BVWoB97EmnUTA/prol20250616131934a945e6524874026414efe9ef07c321ab/public"
+                        alt="Sesame Series Promotion" class="w-full rounded-lg shadow-md" />
                 </div>
 
-                <!-- Arrow Button -->
-                <button
-                    class="w-[28px] h-[28px] border border-[#14203B] rounded-full flex items-center justify-center text-[#14203B] text-sm">
-                    &gt;
-                </button>
+                <!-- Right: Text Content -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#D4A24B] mb-4">Craving Matcha?</h2>
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Grab your favorite Sesame Series drink with <span class="font-semibold">30% OFF</span> when you
+                        order via BROWN App!
+                        Just head to the “Today Offer” section and enjoy the deal at any BROWN store from <strong>June
+                            13–30</strong>.
+                    </p>
+                </div>
             </div>
-        </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <!-- Left: Image -->
+                <div>
+                    <img src="https://imagedelivery.net/dfd6F6eY_BVWoB97EmnUTA/prol20250616131934a945e6524874026414efe9ef07c321ab/public"
+                        alt="Sesame Series Promotion" class="w-full rounded-lg shadow-md" />
+                </div>
 
-
-        <!-- Navigation -->
-        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-[#14203B] pt-4">
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-mobile-alt text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>Menu</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-credit-card text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>BROWN Card</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-map-marker-alt text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>Location</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-mug-hot text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>Merchandise</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-blender text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>DIY Coffee</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-bullhorn text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>News / Promotion</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="fas fa-user-plus text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>Join Brown</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 hover:text-[#0057b8]">
-                <i class="far fa-circle text-sm w-4 h-4 align-middle shrink-0"></i>
-                <span>Our Story</span>
-            </a>
-        </nav>
-
-
-        <!-- Bottom Line with Dots -->
-        <div class="relative w-full max-w-7xl mx-auto mt-3">
-            <div class="relative h-[1px] bg-[#14203B]">
-                <div class="absolute top-1/2 left-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
-                <div class="absolute top-1/2 right-0 w-[5px] h-[5px] bg-[#14203B] rounded-full -translate-y-1/2"></div>
+                <!-- Right: Text Content -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#D4A24B] mb-4">Craving Matcha?</h2>
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Grab your favorite Sesame Series drink with <span class="font-semibold">30% OFF</span> when you
+                        order via BROWN App!
+                        Just head to the “Today Offer” section and enjoy the deal at any BROWN store from <strong>June
+                            13–30</strong>.
+                    </p>
+                </div>
             </div>
-        </div>
-    </header>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <!-- Left: Image -->
+                <div>
+                    <img src="https://imagedelivery.net/dfd6F6eY_BVWoB97EmnUTA/prol20250616131934a945e6524874026414efe9ef07c321ab/public"
+                        alt="Sesame Series Promotion" class="w-full rounded-lg shadow-md" />
+                </div>
 
-     
-</body>
+                <!-- Right: Text Content -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#D4A24B] mb-4">Craving Matcha?</h2>
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Grab your favorite Sesame Series drink with <span class="font-semibold">30% OFF</span> when you
+                        order via BROWN App!
+                        Just head to the “Today Offer” section and enjoy the deal at any BROWN store from <strong>June
+                            13–30</strong>.
+                    </p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <!-- Left: Image -->
+                <div>
+                    <img src="https://imagedelivery.net/dfd6F6eY_BVWoB97EmnUTA/prol20250616131934a945e6524874026414efe9ef07c321ab/public"
+                        alt="Sesame Series Promotion" class="w-full rounded-lg shadow-md" />
+                </div>
 
-</html>
+                <!-- Right: Text Content -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#D4A24B] mb-4">Craving Matcha?</h2>
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Grab your favorite Sesame Series drink with <span class="font-semibold">30% OFF</span> when you
+                        order via BROWN App!
+                        Just head to the “Today Offer” section and enjoy the deal at any BROWN store from <strong>June
+                            13–30</strong>.
+                    </p>
+                </div>
+            </div>
+        </swiper-slide>
+
+    </swiper-container>
+
+</header>
